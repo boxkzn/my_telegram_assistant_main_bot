@@ -1,8 +1,8 @@
 from telethon import TelegramClient, events
 
 # Вставьте сюда свои API ID и API Hash
-api_id = ''
-api_hash = ''
+api_id = '28525653'
+api_hash = '00be693f18234b7f81d3e43139c9b022'
 phone_number = '+79934074451'  # Номер телефона, связанный с вашим аккаунтом Telegram
 
 # Список часто задаваемых вопросов и ответов
