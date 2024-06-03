@@ -36,7 +36,7 @@ client = TelegramClient('session_name', api_id, api_hash)
 @client.on(events.NewMessage)
 async def handler(event):
     user_message = event.message.message.lower()
-    response = FAQ.get(user_message, "Извините, я не знаю ответа на этот вопрос. Попробуйте еще раз. Спасибо.")
+    response = FAQ.get(user_message, "Если вы ходите вступить в группу собстенников 'Полишкина 4', напишите пожалуйста ассистенту группы @assistant_admin_group_bot. Спасибо.")
     sender = await event.get_sender()  # Получаем объект отправителя
     await client.send_message(sender, response)
 

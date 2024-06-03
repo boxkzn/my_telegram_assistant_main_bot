@@ -128,7 +128,7 @@ def main() -> None:
     ensure_csv_headers()
 
     # Replace 'YOUR_TOKEN' with your bot's token
-    application = ApplicationBuilder().token("7434228059:AAEMVqRfzxxZphkOWA8v8yr_A28x1Su3GKQ").build()
+    application = ApplicationBuilder().token("7150348122:AAEmWSBHGoSGpIx33TWbHhR1Evkw8LZ0gcs").build()
 
     # Define conversation handler
     conv_handler = ConversationHandler(
