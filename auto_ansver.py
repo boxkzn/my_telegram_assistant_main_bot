@@ -1,9 +1,9 @@
 from telethon import TelegramClient, events
 
 # Вставьте сюда свои API ID и API Hash
-api_id = '28525653'
-api_hash = '00be693f18234b7f81d3e43139c9b022'
-phone_number = '+79934074451'  # Номер телефона, связанный с вашим аккаунтом Telegram
+api_id = ''
+api_hash = ''
+phone_number = ''  # Номер телефона, связанный с вашим аккаунтом Telegram
 
 # Список часто задаваемых вопросов и ответов
 FAQ = {
@@ -36,7 +36,7 @@ client = TelegramClient('session_name', api_id, api_hash)
 @client.on(events.NewMessage)
 async def handler(event):
     user_message = event.message.message.lower()
-    response = FAQ.get(user_message, "Если вы ходите вступить в группу собстенников 'Полишкина 4', напишите пожалуйста ассистенту группы @assistant_admin_group_bot. Спасибо.")
+    response = FAQ.get(user_message, "Если вы ходите вступить в группу собстенников '', напишите пожалуйста ассистенту группы @assistant_admin_group_bot. Спасибо.")
     sender = await event.get_sender()  # Получаем объект отправителя
     await client.send_message(sender, response)
 
