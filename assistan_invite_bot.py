@@ -17,7 +17,7 @@ APARTMENT, NAME, PHONE = range(3)
 USER_DATA_FILE = 'user_data.csv'
 
 # Your group chat ID (replace with actual chat ID)
-GROUP_CHAT_ID = -1002216946707
+GROUP_CHAT_ID = 
 
 # Ensure the CSV file has the correct headers
 def ensure_csv_headers():
@@ -53,7 +53,7 @@ async def start(update: Update, context: CallbackContext) -> int:
     if update.message.chat.type != 'private':
         return ConversationHandler.END
     
-    await update.message.reply_text('Здравствуйте! Вас приветствует ассистент администратора группы "Полушкина 4". Для вступления в группу Вам необходимо рассказать немного о себе. Пожалуйста, введите номер вашей квартиры:')
+    await update.message.reply_text('Здравствуйте! Вас приветствует ассистент администратора группы "". Для вступления в группу Вам необходимо рассказать немного о себе. Пожалуйста, введите номер вашей квартиры:')
     return APARTMENT
 
 # Handler to capture apartment number
@@ -128,7 +128,7 @@ def main() -> None:
     ensure_csv_headers()
 
     # Replace 'YOUR_TOKEN' with your bot's token
-    application = ApplicationBuilder().token("7150348122:AAEmWSBHGoSGpIx33TWbHhR1Evkw8LZ0gcs").build()
+    application = ApplicationBuilder().token("").build()
 
     # Define conversation handler
     conv_handler = ConversationHandler(
